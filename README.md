@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Atelier E-Commerce
 
 ## Overview
@@ -36,3 +37,6 @@ Atelier is a premium, fully responsive e-commerce experience built with plain HT
 - Add product detail page with gallery and reviews
 - Implement infinite scroll and pagination
 - Add image magnifier and checkout success modal
+=======
+# Dynamic-Website
+>>>>>>> 01f97e3e8969528ae8cb206f9adc00f4b45aa791
