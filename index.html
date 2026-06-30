@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier — Premium E-Commerce</title>
+    <meta name="description" content="Premium e-commerce storefront with modern design and seamless shopping experience." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="page-loader" id="pageLoader">
+      <div class="loader-ring"></div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-shell">
+        <a href="index.html" class="brand" aria-label="Atelier home">
+          <span class="brand-mark">A</span>
+          <span class="brand-text">Atelier</span>
+        </a>
+
+        <form class="search-bar" id="searchForm" role="search">
+          <input id="searchInput" type="search" placeholder="Search products, brands, categories" aria-label="Search products" />
+          <button type="submit" aria-label="Search">⌕</button>
+        </form>
+
+        <nav class="top-nav" aria-label="Quick links">
+          <a href="product.html" class="nav-link nav-link-pill">Login</a>
+          <a href="product.html" class="nav-link nav-link-pill">Become a Seller</a>
+          <a href="checkout.html" class="nav-link nav-link-pill">More</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle color theme">☀</button>
+          <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+            ♡ <span class="count-pill" id="wishlistCount">0</span>
+          </a>
+          <a href="cart.html" class="icon-btn" aria-label="Shopping cart">
+            🛒 <span class="count-pill" id="cartCount">0</span>
+          </a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+
+      <div class="category-strip">
+        <div class="container category-row" aria-label="Category navigation">
+          <div class="menu-item">
+            <button class="menu-trigger" type="button">Grocery</button>
+            <div class="dropdown-panel">
+              <div class="dropdown-content">
+                <div class="dropdown-col">
+                  <h4>Top picks</h4>
+                  <div class="dropdown-list">
+                    <a href="product.html">Daily essentials</a>
+                    <a href="product.html">Fresh staples</a>
+                    <a href="product.html">Beverages</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <button class="menu-trigger" type="button">Mobiles</button>
+            <div class="dropdown-panel">
+              <div class="dropdown-content">
+                <div class="dropdown-col">
+                  <h4>Popular brands</h4>
+                  <div class="dropdown-list">
+                    <a href="product.html?brand=Apple">Apple</a>
+                    <a href="product.html?brand=Samsung">Samsung</a>
+                    <a href="product.html?brand=OnePlus">OnePlus</a>
+                    <a href="product.html?brand=Google">Google</a>
+                    <a href="product.html?brand=Nothing">Nothing</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <button class="menu-trigger" type="button">Fashion</button>
+            <div class="dropdown-panel">
+              <div class="dropdown-content">
+                <div class="dropdown-col">
+                  <h4>Trending now</h4>
+                  <div class="dropdown-list">
+                    <a href="product.html">Men</a>
+                    <a href="product.html">Women</a>
+                    <a href="product.html">Kids</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <button class="menu-trigger" type="button">Electronics</button>
+            <div class="dropdown-panel">
+              <div class="dropdown-content">
+                <div class="dropdown-col">
+                  <h4>Tech essentials</h4>
+                  <div class="dropdown-list">
+                    <a href="product.html">Laptops</a>
+                    <a href="product.html">Audio</a>
+                    <a href="product.html">Accessories</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <button class="menu-trigger" type="button">Home</button>
+            <div class="dropdown-panel">
+              <div class="dropdown-content">
+                <div class="dropdown-col">
+                  <h4>For your space</h4>
+                  <div class="dropdown-list">
+                    <a href="product.html">Furniture</a>
+                    <a href="product.html">Decor</a>
+                    <a href="product.html">Kitchen</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <button class="menu-trigger" type="button">Beauty</button>
+            <div class="dropdown-panel">
+              <div class="dropdown-content">
+                <div class="dropdown-col">
+                  <h4>Self care</h4>
+                  <div class="dropdown-list">
+                    <a href="product.html">Skincare</a>
+                    <a href="product.html">Makeup</a>
+                    <a href="product.html">Fragrance</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="mainContent">
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">A new kind of storefront • crafted for curious shoppers</p>
+            <h1>Discover a shopping experience that feels alive.</h1>
+            <p>Atelier blends premium storytelling, smart discovery, and beautifully curated products into one immersive destination.</p>
+            <div class="hero-actions">
+              <a href="product.html" class="btn btn-primary">Shop the collection</a>
+              <a href="#immersive" class="btn btn-secondary">See the experience</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>40k+</strong>
+                <span>Happy Customers</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>Live Support</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Average Rating</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card reveal">
+            <div class="hero-card-image"></div>
+            <div class="hero-card-info">
+              <p class="eyebrow">Editorial pick</p>
+              <h3>Monarch Edition</h3>
+              <p>Minimal luxury, thoughtful details, and a calm, premium feel.</p>
+              <a href="product.html" class="text-link">View selection</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section immersive-section" id="immersive">
+        <div class="immersive-shell reveal">
+          <div class="immersive-copy">
+            <p class="eyebrow">Immersive discovery</p>
+            <h2>Designed to feel less like a catalog and more like a private showroom.</h2>
+            <p>Switch between experiences and let the product story unfold in a way that feels fresh, personal, and memorable.</p>
+            <div class="immersive-switcher" role="tablist" aria-label="Experience choices">
+              <button class="mode-pill active" data-mode="studio" type="button">Studio Edit</button>
+              <button class="mode-pill" data-mode="speed" type="button">Fast Lane</button>
+              <button class="mode-pill" data-mode="gift" type="button">Gift Finder</button>
+            </div>
+            <a href="product.html" class="btn btn-primary">Open the collection</a>
+          </div>
+          <div class="immersive-spotlight" id="immersiveSpotlight">
+            <div class="spotlight-card">
+              <p class="eyebrow">Now live</p>
+              <h3 id="spotlightTitle">Studio Edit</h3>
+              <p id="spotlightText">A calm, elevated collection with premium finishes and refined essentials.</p>
+              <ul id="spotlightList">
+                <li>Curated bestsellers</li>
+                <li>Thoughtful gifting ideas</li>
+                <li>Fast delivery and support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section brand-spotlight reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Mobile brands</p>
+            <h2>Explore the latest from the brands everyone is talking about.</h2>
+          </div>
+          <a href="product.html" class="text-link">Browse all</a>
+        </div>
+        <div class="brand-showcase">
+          <a href="product.html?brand=Apple" class="brand-card">
+            <span class="brand-icon"></span>
+            <h3>Apple</h3>
+            <p>Refined phones, earbuds, and accessories.</p>
+          </a>
+          <a href="product.html?brand=Samsung" class="brand-card">
+            <span class="brand-icon">✦</span>
+            <h3>Samsung</h3>
+            <p>Flagship devices with immersive displays.</p>
+          </a>
+          <a href="product.html?brand=OnePlus" class="brand-card">
+            <span class="brand-icon">⚡</span>
+            <h3>OnePlus</h3>
+            <p>Fast performance and clean design.</p>
+          </a>
+          <a href="product.html?brand=Google" class="brand-card">
+            <span class="brand-icon">G</span>
+            <h3>Google</h3>
+            <p>Intelligent AI features and smooth software.</p>
+          </a>
+          <a href="product.html?brand=Nothing" class="brand-card">
+            <span class="brand-icon">◌</span>
+            <h3>Nothing</h3>
+            <p>Bold visuals and standout everyday tech.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="container section" id="featured">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured Collection</p>
+            <h2>Elevated essentials</h2>
+          </div>
+          <a href="product.html" class="text-link">View all</a>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+      </section>
+
+      <section class="container section">
+        <div class="premium-banner reveal">
+          <div>
+            <p class="eyebrow">Crafted for modern living</p>
+            <h2>Signature pieces, thoughtful details, and elevated comfort.</h2>
+            <a href="product.html" class="btn btn-primary">Explore the edit</a>
+          </div>
+          <div class="pill-stack">
+            <span>Free shipping over ₹1500</span>
+            <span>Express delivery</span>
+            <span>Premium support</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section">
+        <div class="benefit-grid reveal">
+          <article class="benefit-card">
+            <h3>🚚 Fast Delivery</h3>
+            <p>Same-day dispatch on popular products and swift doorstep delivery.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>🛡️ Secure Checkout</h3>
+            <p>Safe payments and a smooth checkout experience every single time.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>⭐ Top Rated Brands</h3>
+            <p>Shop trusted names across fashion, gadgets, home, and lifestyle.</p>
+          </article>
+          <article class="benefit-card">
+            <h3>💬 24/7 Help</h3>
+            <p>Friendly support for orders, returns, and product recommendations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Trending Right Now</p>
+            <h2>Best sellers</h2>
+          </div>
+          <a href="product.html" class="text-link">View all</a>
+        </div>
+        <div class="product-grid" id="trendingProducts"></div>
+      </section>
+
+      <section class="container section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Recently viewed</p>
+            <h2>Picked up where you left off</h2>
+          </div>
+        </div>
+        <div class="product-grid" id="recentlyViewed"></div>
+      </section>
+
+      <section class="container section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Fresh arrivals</p>
+            <h2>New in the collection</h2>
+          </div>
+          <a href="product.html" class="text-link">View all</a>
+        </div>
+        <div class="product-grid" id="newArrivals"></div>
+      </section>
+
+      <section class="container section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Full catalog</p>
+            <h2>Browse every product</h2>
+          </div>
+          <a href="product.html" class="text-link">Open shop</a>
+        </div>
+        <div class="product-grid" id="allProducts"></div>
+      </section>
+
+      <section class="container section testimonial-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Loved by customers</p>
+            <h2>What our community says</h2>
+          </div>
+        </div>
+        <div class="review-grid">
+          <article class="review-card reveal">
+            <p>“The experience feels luxurious and effortless. Products are beautifully curated.”</p>
+            <strong>Rina S.</strong>
+          </article>
+          <article class="review-card reveal">
+            <p>“Fast shipping and a beautiful UI. It feels like shopping on a premium brand site.”</p>
+            <strong>Daniel K.</strong>
+          </article>
+          <article class="review-card reveal">
+            <p>“I love how easy it is to find exactly what I was looking for.”</p>
+            <strong>Jules M.</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter-section">
+        <div class="container newsletter-card reveal">
+          <div>
+            <p class="eyebrow">Stay in the loop</p>
+            <h2>Receive early access to new drops.</h2>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email address" aria-label="Email address" />
+            <button class="btn btn-primary" type="submit">Join</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">A</span>
+            <span class="brand-text">Atelier</span>
+          </a>
+          <p>Premium essentials designed for modern living.</p>
+        </div>
+        <div>
+          <h3>Shop</h3>
+          <a href="product.html">All products</a>
+          <a href="wishlist.html">Favorites</a>
+          <a href="checkout.html">Checkout</a>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <a href="#">Contact</a>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
+    <div class="modal" id="quickViewModal" aria-hidden="true"></div>
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <div class="progress-bar" id="progressBar"></div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+.shop-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.filters-card {
+  padding: 1rem;
+  position: sticky;
+  top: 96px;
+}
+
+.filter-block + .filter-block {
+  margin-top: 1rem;
+}
+
+.filter-block h3 {
+  margin-bottom: 0.7rem;
+}
+
+.filter-block label,
+.payment-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+  color: var(--gray);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.85rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.product-card .badge {
+  display: inline-block;
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  color: var(--secondary);
+  background: rgba(111, 87, 255, 0.1);
+  font-size: 0.75rem;
+  margin-bottom: 0.55rem;
+}
+
+.product-card .rating {
+  color: #f59e0b;
+  font-size: 0.9rem;
+}
+
+.product-card .stock {
+  color: var(--gray);
+  font-size: 0.82rem;
+}
+
+.product-detail-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 1.3rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.4rem;
+}
+
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 1.3rem;
+}
+
+.product-detail-card img {
+  width: 100%;
+  border-radius: 18px;
+  min-height: 320px;
+  object-fit: cover;
+}
+
+.detail-price-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0.8rem 0;
+}
+
+.detail-meta {
+  color: var(--gray);
+  margin-bottom: 0.4rem;
+}

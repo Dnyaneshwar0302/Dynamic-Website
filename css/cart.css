@@ -1,0 +1,77 @@
+.cart-layout,
+.checkout-shell {
+  display: grid;
+  grid-template-columns: 1.35fr 0.8fr;
+  gap: 1.3rem;
+  align-items: start;
+}
+
+.cart-items,
+.checkout-form-card,
+.summary-card {
+  padding: 1.2rem;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.qty-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.qty-controls button {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--background);
+  color: var(--text);
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+  color: var(--gray);
+}
+
+.summary-line.total {
+  padding-top: 0.7rem;
+  margin-top: 0.8rem;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+  font-weight: 700;
+}
+
+.coupon-box {
+  display: flex;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+.checkout-form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.4rem 0;
+}

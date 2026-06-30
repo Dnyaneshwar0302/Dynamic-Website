@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop — Atelier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container nav-shell">
+        <a href="index.html" class="brand" aria-label="Atelier home">
+          <span class="brand-mark">A</span>
+          <span class="brand-text">Atelier</span>
+        </a>
+        <form class="search-bar" id="searchForm" role="search">
+          <input id="productSearchInput" type="search" placeholder="Search products" aria-label="Search products" />
+          <button type="submit" aria-label="Search">⌕</button>
+        </form>
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle color theme">☀</button>
+          <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">♡ <span class="count-pill" id="wishlistCount">0</span></a>
+          <a href="cart.html" class="icon-btn" aria-label="Shopping cart">🛒 <span class="count-pill" id="cartCount">0</span></a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <section class="page-heading">
+        <p class="eyebrow">Discover</p>
+        <h1>Curated products for every space.</h1>
+      </section>
+
+      <section id="productDetailSection" class="hidden product-detail-card"></section>
+
+      <section class="shop-layout">
+        <aside class="filters-card" aria-label="Product filters">
+          <div class="filter-block">
+            <h3>Categories</h3>
+            <div id="categoryFilters"></div>
+          </div>
+          <div class="filter-block">
+            <h3>Price</h3>
+            <div id="priceFilters"></div>
+          </div>
+          <div class="filter-block">
+            <h3>Rating</h3>
+            <div id="ratingFilters"></div>
+          </div>
+          <div class="filter-block">
+            <h3>Availability</h3>
+            <div id="availabilityFilters"></div>
+          </div>
+          <div class="filter-block">
+            <h3>Brand</h3>
+            <div id="brandFilters"></div>
+          </div>
+          <div class="filter-block">
+            <h3>Sort By</h3>
+            <select id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+            </select>
+          </div>
+        </aside>
+
+        <div class="products-panel">
+          <div class="toolbar">
+            <p id="productCount">Loading products…</p>
+            <button class="btn btn-secondary" id="clearFilters">Clear filters</button>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="quickViewModal" aria-hidden="true"></div>
+    <div class="toast" id="toast" aria-live="polite"></div>
+    <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
+
+    <script src="js/storage.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/product.js"></script>
+  </body>
+</html>
